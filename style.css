@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*Theme Name: Festival
+Theme URI: www.CamiloJC.es
+Author: Camilo Juan Casillas
+Description: Tema para mostrar cómo se construye un sitio con WordPress
+*/
+
+html, body {
+    height: 100%;
+}
+
+body .container{
+	padding-top: 60px;
+}
+
+.contenido{
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -100px;
+    padding-bottom: 100px;
+}
+
+header{
+	padding: 1em 0.5em;
+	overflow: hidden;
+}
+
+header, footer{
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+}
+
+header h1{
+	font-size: 2em;
+}
+
+header ul{
+	margin-top: 2em;
+	float: right;
+}
+
+header ul li{
+	display: inline-block;
+	margin-right: 1em;
+	line-height: 2em;
+	font-size: 1em;
+}
+
+section img{
+	border: 10px solid white;
+	-webkit-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+	-moz-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+	box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+}
+
+footer {
+	position: relative;
+	height: 100px;
+} 
+
+footer div{
+	padding: 1em;
+	margin: auto;
+}
+
+form label, form input, form button, form select{
+	margin: 1em 0;
+}
+
+form button{
+	width: 15em;
+}
+
+section.container a{
+	color: #4b6cb7;
+	text-decoration: none;
+}
+
+footer p, header a, header a:visited, header a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+input.gsc-search-button-v2{
+	box-sizing: content-box;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+.blanco{
+	color: white;
+}
