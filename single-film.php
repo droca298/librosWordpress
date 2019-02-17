@@ -20,7 +20,7 @@
 
 
                     <div class="media">
-                        <img src="<?php echo $cartel ?> " class="align-self-start mr-3" alt="...">
+                        <img style="width: 192px; height: 282px;" src="<?php echo $cartel ?> " class="align-self-start mr-3" alt="...">
                         <div class="media-body">
                             <h5 class="mt-0">Sinopsis</h5>
                             <p class="text-justify"> <?php the_content() ?></p>

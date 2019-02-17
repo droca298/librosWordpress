@@ -25,10 +25,7 @@
                     <a class="nav-link white" href="<?php bloginfo('url'); ?>/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white" href="#">Buscar libro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link white" href="#">Sección Oficial</a>
+                    <a class="nav-link white" href="<?php echo bloginfo('url') . '/buscar'; ?>">Buscar libro</a>
                 </li>
             </ul>
         </div>
