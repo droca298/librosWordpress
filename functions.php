@@ -213,7 +213,7 @@ add_filter('excerpt_length', 'longitud_excerpt');
 
 function longitud_excerpt($length)
 {
-    return 10;
+    return 25;
 }
 
 add_filter('excerpt_more', 'mi_excerpt_leermas');
@@ -221,7 +221,7 @@ add_filter('excerpt_more', 'mi_excerpt_leermas');
 function mi_excerpt_leermas()
 {
     global $post;
-    return '<a href="' . get_permalink($post->ID) . '"> Leer más...</a>';
+    return '<br/><br/><a class="btn btn-warning text-light btn-block" href="' . get_permalink($post->ID) . '"> Leer más...</a>';
 }
 
 ?>

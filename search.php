@@ -2,8 +2,8 @@
     <section class="container">
         <?php
         isset($_GET["s"]) ? $palabra = $_GET["s"] : $palabra = NULL;
-        isset($_GET["director"])
-            ? $director = $_GET["director"] : $director = NULL;
+        isset($_GET["autor"])
+            ? $director = $_GET["autor"] : $director = NULL;
         isset($_GET["genero"]) ? $genero = $_GET["genero"] : $genero = NULL;
         isset($_GET["oficial"]) ?
             $oficial = $_GET["oficial"] : $oficial = NULL;//Esta variable la utilizamos para buscar las películas que participan en la sección oficial. No la utilizamos en  buscar.php.
@@ -15,7 +15,7 @@
                 'meta_query' => array(
                     'relation' => 'AND',
                     array(
-                        'key' => 'director',
+                        'key' => 'autor',
                         'value' => $director,
                         'compare' => 'LIKE'
                     ),
@@ -44,7 +44,7 @@
                 <?php the_excerpt(); ?>
             </div>
             <?php endwhile; else: ?>
-            <p class="col-md-12">Lo
+            <p class="col-md-12 text-danger">Lo
                 sentimos, no se han en
                 contrado películas que
                 cumplan las condicione
