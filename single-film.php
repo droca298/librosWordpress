@@ -6,28 +6,42 @@
                 <div class="col-md-6">
                     <h2><?php the_title(); ?></h2>
                     <?php
-                    $director = get_post_meta(get_the_id(), 'director', TRUE);
-                    $estreno = get_post_meta(get_the_id(), 'estreno', TRUE);
+                    $autor = get_post_meta(get_the_id(), 'autor', TRUE);
+                    $unidades = get_post_meta(get_the_id(), 'unidades', TRUE);
                     $nacionalidad = get_post_meta(get_the_id(), 'nacionalidad',
                         TRUE);
                     $cartel = get_post_meta(get_the_id(), 'cartel', TRUE);
-                    $trailer = get_post_meta(get_the_id(), 'trailer', TRUE);
-                    $duracion = get_post_meta(get_the_id(), 'duracion', TRUE);
-                    echo '<img src=' . $cartel . ' />'; ?>
-                </div>
-                <div class="col-md-6">
-                    <br/>
-                    <?php
-                    echo '<p class="negrita">Sinopsis:';
-                    the_content();
-                    echo '<p><span class="negrita">Director/a:</span>
-' . $director . '</p>';
-                    echo '<p><span class="negrita">Fecha de estreno:</span>
-' . $estreno . '</p>';
-                    echo '<p><span class="negrita">Nacionalidad:</span>
-' . $nacionalidad . '</p>';
-                    echo '<p><a href="' . $trailer . '">Enlace al trailer</p>';
+                    $isbn = get_post_meta(get_the_id(), 'isbn', TRUE);
+                    $precio = get_post_meta(get_the_id(), 'precio', TRUE);
                     ?>
+                </div>
+                <div class="col-md-12">
+                    <br/>
+
+
+                    <div class="media">
+                        <img style="width: 192px; height: 282px;" src="<?php echo $cartel ?> " class="align-self-start mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0">Sinopsis</h5>
+                            <p class="text-justify"> <?php the_content() ?></p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                <span style="font-weight: bold" class="text-uppercase">Información adicional</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><?php  echo '<p><span class="negrita">Autor/a: </span> ' . $autor . '</p>'; ?></li>
+                                <li class="list-group-item"><?php  echo '<p><span class="negrita">ISBN: </span> ' . $isbn . '</p>'; ?></li>
+                                <li class="list-group-item"><?php echo '<p><span class="negrita">Nacionalidad: </span> ' . $nacionalidad . '</p>'; ?></li>
+                                <li class="list-group-item"><?php echo '<p><span class="negrita">Unidades: </span> ' . $unidades . '/u' . '</p>';?></li>
+                                <li class="list-group-item"><?php echo '<p><span class="negrita">Precio/u: </span> ' . $precio . '€' . '</p>'; ?></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
                 </div>
             <?php
             endwhile;
@@ -37,7 +51,7 @@
         </article>
         <div class="col-md-12">
             <br/>
-            <a href="<?php bloginfo('url'); ?>/">Volver al inicio</a>
+            <a class="btn btn-block btn-success text-light" href="<?php bloginfo('url'); ?>/">Volver al inicio</a>
             <br/>
         </div>
     </section>

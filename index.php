@@ -22,8 +22,8 @@
                 <img style="height: 190px; width: 150px; display: block; margin: auto;" src="<?= $cartel ?>" class="card-img-top" alt="Cartel pelicula" />
                 <div class="card-body">
                     <h5 class="card-title"><?php the_title(); ?></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a  href="<?php echo get_permalink(); ?>" class="btn btn-primary text-light">Ver libro</a>
+                    <a class="card-body"><?php the_excerpt(); ?></a>
+
                 </div>
             </div>
 

@@ -15,8 +15,8 @@ ch" method="get" action="<?php
                 >
             </div>
             <div class="form-group">
-                <label for="director">Búsqueda por director/a: </label>
-                <input id="director" type="text" name="director"
+                <label for="director">Búsqueda por autor/a: </label>
+                <input id="director" type="text" name="autor"
                 >
             </div>
             <div class="form-group">
@@ -31,7 +31,7 @@ ch" method="get" action="<?php
                 </select>
             </div>
             <div>
-                <button class="btn btn-default"
+                <button class="btn btn-success"
                         type="submit">Buscar
                 </button>
             </div>
