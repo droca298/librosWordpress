@@ -6,13 +6,13 @@
                 <div class="col-md-6">
                     <h2><?php the_title(); ?></h2>
                     <?php
-                    $director = get_post_meta(get_the_id(), 'director', TRUE);
-                    $estreno = get_post_meta(get_the_id(), 'estreno', TRUE);
+                    $autor = get_post_meta(get_the_id(), 'autor', TRUE);
+                    $unidades = get_post_meta(get_the_id(), 'unidades', TRUE);
                     $nacionalidad = get_post_meta(get_the_id(), 'nacionalidad',
                         TRUE);
                     $cartel = get_post_meta(get_the_id(), 'cartel', TRUE);
-                    $trailer = get_post_meta(get_the_id(), 'trailer', TRUE);
-                    $duracion = get_post_meta(get_the_id(), 'duracion', TRUE);
+                    $isbn = get_post_meta(get_the_id(), 'isbn', TRUE);
+                    $precio = get_post_meta(get_the_id(), 'precio', TRUE);
                     echo '<img src=' . $cartel . ' />'; ?>
                 </div>
                 <div class="col-md-6">
@@ -20,13 +20,12 @@
                     <?php
                     echo '<p class="negrita">Sinopsis:';
                     the_content();
-                    echo '<p><span class="negrita">Director/a:</span>
-' . $director . '</p>';
-                    echo '<p><span class="negrita">Fecha de estreno:</span>
-' . $estreno . '</p>';
-                    echo '<p><span class="negrita">Nacionalidad:</span>
-' . $nacionalidad . '</p>';
-                    echo '<p><a href="' . $trailer . '">Enlace al trailer</p>';
+                    echo '<p><span class="negrita">Autor/a: </span> ' . $autor . '</p>';
+                    echo '<p><span class="negrita">ISBN: </span> ' . $isbn . '</p>';
+                    echo '<p><span class="negrita">Nacionalidad: </span> ' . $nacionalidad . '</p>';
+                    echo '<p><span class="negrita">Unidades: </span> ' . $unidades . '/u' . '</p>';
+                    echo '<p><span class="negrita">Precio/u: </span> ' . $precio . '€' . '</p>';
+
                     ?>
                 </div>
             <?php
