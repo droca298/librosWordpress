@@ -14,15 +14,15 @@
 <body>
 <div class="contenido">
     <nav class="navbar navbar-expand-lg bg-primary">
-        <img style="height: 9vh;" src="<?php bloginfo('template_directory'); ?>/Imagenes/logo-libro.png" alt="Logo" />
+        <a href="<?php bloginfo('url'); ?>/"><img style="height: 9vh;" src="<?php bloginfo('template_directory'); ?>/Imagenes/logo-libro.png" alt="Logo" /></a>
         <button class="navbar-toggler" style="outline-color: black;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">LCDL</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <span class="navbar-brand white">La casa del libro</span>
+            <span class="navbar-brand text-light">La casa del libro</span>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link white" href="#">Inicio</a>
+                    <a class="nav-link white" href="<?php bloginfo('url'); ?>/">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link white" href="#">Buscar libro</a>
